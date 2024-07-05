@@ -4,7 +4,8 @@
   "exports": {
     "./counter": "./components/counter.ts",
     "./header": "./components/header.ts",
-    "./setup-counter": "./utils/counter.ts"
+    "./setup-counter": "./utils/counter.ts",
+    "./global-css": "./app/globals.css"
   },
   "license": "MIT",
   "scripts": {
@@ -13,7 +14,17 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@types/react": "^18.3.3",
     "eslint": "^8.57.0",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.400.0",
+    "react": "^18.3.1",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7"
   }
 }
